@@ -1,0 +1,721 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* header */
+header {
+  background-color: #f2f2f2;
+}
+/* header nav */
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+nav ul li a {
+  color: #333;
+  font-weight: bold;
+  font-size: 10.8px;
+  position: relative;
+  padding: 8px 0;
+}
+nav ul li a::after {
+  content: "";
+  width: 0px;
+  height: 1.6px;
+  position: absolute;
+  background-color: #333;
+  left: 50%;
+  bottom: 0;
+  transition: all cubic-bezier(0.65, 0.05, 0.36, 1) 0.3s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+.searchNcart {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.searchNcart a {
+  color: #333;
+  font-size: 14px;
+}
+/* header product examples */
+.header_product_examples {
+  background-color: #fff;
+}
+.examples {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 0;
+}
+.example {
+  text-align: center;
+  width: 23%;
+}
+.example p {
+  font-size: 11.2px;
+  color: #333;
+}
+.sameSpanStyle {
+  font-size: 12px;
+  color: #bf4800;
+}
+/* header shop */
+.header_shop {
+  padding: 36px 0;
+}
+.header_shop_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.header_shop_content p {
+  font-size: 20px;
+  color: #333;
+}
+.header_shop_content a,
+.SameCTAStyle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  color: #0071dc;
+  position: relative;
+  padding: 4px 0;
+}
+/* all CTA link underline */
+.SameCTAStyle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 4px;
+  top: 120%;
+  height: 2.8px;
+  border-radius: 2px;
+  background: linear-gradient(to right, yellow, orange, green, blue);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.35s ease-in-out;
+}
+/* all CTA link hover */
+.SameCTAStyle:hover::after {
+  transform: scaleX(1);
+}
+/* for all sections */
+section {
+  padding: 40px 0;
+  color: #fff;
+}
+/* titanium section */
+.titanium {
+  background-color: #000;
+}
+.titanium_content,
+.sameSectionStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.titanium_content h4,
+.sameH4Style {
+  font-size: 20px;
+  color: #8b887eff;
+}
+.titanium_word {
+  width: 100%;
+  background: url("/assets/pics/titanium.jpeg") center/contain no-repeat;
+  padding: 16px;
+}
+.price {
+  font-size: 12.8px;
+}
+.buyBtn {
+  padding: 12px 24px;
+  background-color: #0071dc;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 12.8px;
+  transition: all 0.3s ease-in-out;
+}
+.buyBtn:hover {
+  box-shadow: 4px 6px 8px #acb9ec;
+}
+.titanium_image {
+  width: 60%;
+  height: 48vh;
+  background: url("/assets/pics/titanium-pc.png") center/contain no-repeat;
+}
+/* newphoria section */
+.newphoria {
+  background-color: #fff;
+  color: #000;
+}
+.newphoria_content h4 {
+  color: #000;
+}
+.newphoria_content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+.newphoria_image {
+  width: 100%;
+  height: 56vh;
+  background: url("/assets/pics/newphoria.jpeg") center/contain no-repeat;
+}
+.buyBtnOnWhiteBck:hover {
+  box-shadow: 4px 6px 8px#010e42;
+}
+/* love section */
+.love {
+  background-color: #fbfbfb;
+}
+.love_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.love_content {
+  width: 50%;
+}
+.love_content h4 {
+  color: #000;
+}
+.love_content h2 {
+  font: 600 48px "Arial";
+  color: #1e3791;
+}
+.love_content p {
+  color: #000;
+}
+.love_image {
+  width: 100vh;
+  height: 100vh;
+  background: url("/assets/pics/lovebg.jpeg") center/contain no-repeat;
+}
+/* guided tour section */
+.guided {
+  height: 100vh;
+  background: url(/assets/pics/guide\ tour\ bg.jpeg) center/cover no-repeat;
+  border-radius: 32px;
+  margin: 20px;
+}
+.guided_wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.guided_content h4,
+.guided_content h2 {
+  padding: 12px 0;
+}
+.guided_content h4 {
+  font: 600 24px "Arial";
+}
+.guided_content h2 {
+  font: 700 44px "Arial";
+}
+.guided_content :nth-child(3) {
+  padding-bottom: 24px;
+}
+.guided_content a {
+  display: inline-block;
+  background-color: #fffc;
+  padding: 12px 20px;
+  border-radius: 20px;
+  color: #000;
+  transition: all 0.38s ease-in-out;
+}
+.guided_content a:hover {
+  background-color: #0071dc;
+  color: #fff;
+}
+/* which section */
+.which {
+  background-color: #fff;
+  color: #000;
+}
+.which h1 {
+  font: 700 48px "Arial";
+  text-align: center;
+  padding: 40px 0;
+}
+/* phones */
+.phones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.phone-card {
+  display: flex;
+  flex-direction: column;
+}
+.phone {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 0;
+}
+.phoneImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.phone-img {
+  width: 240px;
+  height: 256px;
+  object-fit: contain;
+}
+.phoneInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.phoneInfo h2 {
+  font-weight: 600;
+}
+hr {
+  width: 100%;
+}
+/* features */
+.features,
+.features-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.features-card {
+  gap: 12px;
+  padding: 20px 0;
+}
+.features-card p {
+  font-size: 11.2px;
+}
+.features-card img {
+  width: 40px;
+}
+.features .zoom {
+  font: 700 20px "Arial";
+}
+/* whichCTA */
+.whichCTA {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 0;
+}
+/* ways section */
+.ways {
+  background-color: #f2f2f2;
+  color: #000;
+}
+.ways h2 {
+  font: 500 44px "Arial";
+  text-align: center;
+  padding: 20px;
+}
+.ways_wrapper {
+  display: flex;
+  gap: 20px;
+}
+.ways-card {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 12px;
+}
+.ways-card h5 {
+  font: 700 24px "Arial";
+  text-align: center;
+  padding: 16px;
+}
+.ways-card p {
+  color: #6e6e73;
+  text-align: center;
+}
+.trade-img {
+  background: url(/assets/pics/trade\ your\ iphone.jpg) center/contain no-repeat;
+  width: 100%;
+  height: 30vh;
+}
+.carrierDeals-img {
+  background: url(/assets/pics/iphone\ carrier\ deals.jpeg) center/contain
+    no-repeat;
+  width: 100%;
+  height: 20vh;
+}
+.apr-img {
+  background: url(/assets/pics/apr.jpeg) center/contain no-repeat;
+  width: 100%;
+  height: 30vh;
+}
+/* whyApple section */
+.whyApple {
+  background-color: #f2f2f2;
+  color: #000;
+}
+.whyApple_wrapper {
+  height: 88vh;
+  background: url(/assets/pics/whyApple.jpeg) center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.whyApple h2 {
+  font: 600 44px "Arial";
+  text-align: center;
+  padding: 40px;
+}
+.whyApple p {
+  text-align: center;
+}
+/* featured section */
+.featured {
+  background-color: #f2f2f2;
+  color: #000;
+}
+.featured_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+.featured-heading {
+  font: 700 44px "Arial";
+  text-align: center;
+  padding-bottom: 20px;
+}
+/* MagSafe */
+.magsafe,
+.airtag,
+.sameCardStyleImgLeft {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.magsafe {
+  padding: 20px;
+}
+.magsafe-content,
+.airtag-content,
+.airpods-content,
+.sameRightContentStyle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.magsafe-content h2,
+.airtag-content h2,
+.airpods-content h2,
+.sameRightContentH2Style {
+  font: 700 44px "Arial";
+}
+.magsafe-content p {
+  padding: 16px;
+  text-align: center;
+}
+.magsafe-img,
+.airtag-img,
+.sameProductLeftImgStyle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.magsafe-img img,
+.airtag-img img {
+  width: 100%;
+}
+/* AirTag */
+.airtag,
+.sameCardStyleImgLeft {
+  padding: 40px;
+}
+.airtag-img,
+.sameCardStyleImgLeft-img {
+  padding: 20px 0;
+}
+.airtag-content p {
+  text-align: center;
+}
+.airtagCTA,
+.sameCTADivStyle {
+  display: flex;
+  gap: 12px;
+}
+/* AirPods */
+.airpods {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 0;
+}
+/* services */
+.services {
+  display: flex;
+  gap: 32px;
+}
+.service {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.service h5 {
+  font: 600 20px "Arial";
+}
+.service p {
+  text-align: center;
+  line-height: 20px;
+}
+/* what makes section */
+.whatMakes {
+  background-color: #f2f2f2;
+  color: #000;
+}
+.whatMakes_heading {
+  font: 600 32px "Arial";
+  text-align: center;
+  padding: 20px 0;
+}
+.whatMakes_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 36px;
+}
+/* what makes top */
+.whatMakes-top,
+.bottom-left,
+.bottom-right,
+.sameLeftDivCardStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 12px;
+  gap: 12px;
+}
+.whatMakes-top {
+  height: 84vh;
+  background: url(/assets/pics/ios17.jpg) center/cover no-repeat;
+}
+.top-content,
+.left-content,
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.top-content h2,
+.left-content h2,
+.right-content h2 {
+  font: 600 32px "Arial";
+}
+.left-content h2 {
+  text-align: center;
+}
+/* what makes bottom */
+.whatMakes-bottom,
+.sameTwoCardStyle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.bottom-left,
+.bottom-right,
+.sameLeftDivCardStyle {
+  width: 50%;
+  height: 64vh;
+  justify-content: space-around;
+}
+/* bottom left backgroung image */
+.left-img {
+  background: url(/assets/pics/switching.jpeg) center/cover no-repeat;
+}
+/* bottom right backgroung image */
+.right-img {
+  background: url(/assets/pics/privacy.jpg) center/cover no-repeat;
+}
+.left-img,
+.right-img {
+  width: 100%;
+  height: 46vh;
+}
+/* get more section */
+.getMore {
+  background-color: #f2f2f2;
+  color: #000;
+}
+.getMore_heading {
+  font: 700 32px "Arial";
+  text-align: center;
+  padding-bottom: 20px;
+}
+.getMore_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+/* apple One */
+.one-content {
+  gap: 24px;
+}
+.one-heading {
+  font: 600 56px "Arial";
+}
+.samePrgrphStyle {
+  font: 500 20px "Arial";
+}
+/* tv+ & music */
+.tvPlus,
+.appleMusic {
+  background-color: #000;
+  color: #fff;
+}
+.tvPlus-heading,
+.appleMusic-heading,
+.fitnessPlus-heading,
+.arcade-heading,
+.newsPlus-heading,
+.giftCards-heading,
+.research-heading {
+  font: 500 44px "Arial" !important;
+}
+.tvPlus-img {
+  background: url(/assets/pics/tv+.png) center/cover no-repeat;
+}
+.appleMusic-img {
+  background: url(/assets/pics/appleMusic.jpg) center/cover no-repeat;
+}
+/* fitness+ and arcade */
+.fitnessPlus-img {
+  background: url(/assets/pics/fitness_bg.jpg) center/cover no-repeat;
+}
+.arcade-img {
+  background: url(/assets/pics/arcade_bg.png) center/cover no-repeat;
+}
+/* news+ & gift cards */
+.newsPlus-img {
+  background: url(/assets/pics/news_bg.jpeg) center/cover no-repeat;
+}
+.giftCards-img {
+  background: url(/assets/pics/gift_bg.jpg) center/cover no-repeat;
+}
+/* apple research app */
+.research-heading {
+  text-align: center;
+}
+/* starred info section */
+.starredInfo {
+  padding-bottom: 0;
+}
+.starredInfo p {
+  font-size: 14.8px;
+  text-align: justify;
+  color: #0000007a;
+  padding-bottom: 12px;
+}
+/* footer */
+footer {
+  color: #000000bd;
+  padding: 32px 0;
+}
+.footer_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+/* wrapper top */
+.wrapper_top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.wrapper_top a {
+  color: #000;
+}
+.wrapper_top p {
+  font-size: 12px;
+}
+/* lists */
+.lists {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.list h5 {
+  font-weight: 600;
+}
+.subList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sameListStyle {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.sameListStyle li a {
+  font-size: 12.4px;
+  color: #000000bd;
+}
+/* find store */
+.findStore {
+  font-size: 12.4px;
+}
+.findStore a {
+  color: #00f;
+}
+/* copyright */
+.copyright {
+  font-size: 12.4px;
+  display: flex;
+  justify-content: space-between;
+}

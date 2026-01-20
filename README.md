@@ -39,18 +39,16 @@ No JavaScript, frameworks, or external libraries were used.
 
 ## 📂 Folder Structure
 
+```text
 appleclone/
-│
 ├── index.html
-│
 └── assets/
     ├── style/
     │   ├── reset.css
     │   └── main.css
-    │
     └── pics/
         └── (images and visual assets)
-
+```
 ---
 
 ## 📁 Folder Details
